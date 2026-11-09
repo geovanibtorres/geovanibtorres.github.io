@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Geovani Torres</title>
+<style>
+:root{color-scheme:light dark;--bg:#ffffff;--text:#1f2328;--muted:#57606a;--link:#0550ae;--rule:#d0d7de}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--text:#e6edf3;--muted:#9198a1;--link:#4493f8;--rule:#30363d}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:1rem/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+header,main{max-width:64rem;margin:0 auto;padding:2rem 1.25rem}
+header{border-bottom:1px solid var(--rule)}
+h1{margin:0 0 .5rem;font-size:2rem;line-height:1.2}
+h2{margin:2rem 0 1rem;font-size:1.35rem}
+h3{margin:0;font-size:1.05rem}
+p,li{max-width:70ch}
+p{margin:.4rem 0}
+.summary{font-size:1.1rem}
+.period{margin:.15rem 0;color:var(--muted);font-size:.9rem}
+a{color:var(--link);text-decoration:underline;text-underline-offset:.15em}
+a:focus-visible{outline:3px solid var(--link);outline-offset:2px}
+nav ul,.tags{display:flex;flex-wrap:wrap;gap:.5rem 1rem;margin:1rem 0 0;padding:0;list-style:none}
+.projects{display:grid;grid-template-columns:repeat(auto-fill,minmax(18rem,1fr));gap:1rem}
+.projects h2{grid-column:1/-1;margin-bottom:0}
+.card{padding:1rem 1.1rem;border:1px solid var(--rule);border-radius:8px}
+.items{margin:.5rem 0 0;padding-left:1.2rem}
+.roles ol{margin:0;padding:0;list-style:none}
+.role{margin-bottom:1.25rem}
+.education ul{margin:0;padding-left:1.2rem}
+.part+.part,.text+.text,.text+.period{margin-left:.5rem}
+@media (max-width:40rem){header,main{padding:1.25rem 1rem}.projects{grid-template-columns:1fr}h1{font-size:1.6rem}}
+</style>
+</head>
+<body>
+<header>
+<h1>Geovani Torres</h1>
+<p class="summary">Data &amp; Analytics professional with an Economics background and MBA, specialized in business intelligence, KPI frameworks and decision-oriented reporting. Transform financial and operational data into clear Power BI, Tableau and HTML dashboards. Use GitHub Copilot to accelerate analysis, drafting and documentation, with Claude Code adoption underway.</p>
+<nav aria-label="Profiles">
+<ul>
+<li><a href="https://github.com/geovanibtorres">GitHub</a></li>
+<li><a href="https://www.linkedin.com/in/geovani-de-brito-torres/">LinkedIn</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section class="projects">
+<h2>Projects</h2>
+<article class="card">
+<h3><a href="https://github.com/geovanibtorres/health_monitor_pipeline">Pipeline Health Monitor</a></h3>
+<p class="period">Jun 2026 – Jul 2026</p>
+<p>Sanitized portfolio version of an execution-centric observability layer for BigQuery pipelines, with an SLA catalog, dependency-based status rollup and de-duplicated alerts.</p>
+</article>
+<article class="card">
+<h3><a href="https://github.com/geovanibtorres/unified-sales-view">Unified Sales View</a></h3>
+<p class="period">May 2026</p>
+<p>Sanitized portfolio repository with a layered BigQuery SQL model that unifies multi-source billings, with conformed dimensions, currency conversion and subscription revenue recognition.</p>
+</article>
+<article class="card">
+<h3><a href="https://github.com/geovanibtorres/market-intelligence-education">Higher-Ed Evasion Modeling</a></h3>
+<p class="period">May 2026</p>
+<p>Public portfolio repository that models student evasion in Brazilian higher education with public census data.</p>
+<ul class="items">
+<li>Fitted fixed-effects and random-effects panel regressions with robust covariance (linearmodels) to model evasion rates by institution and year.</li>
+<li>Benchmarked the panel regressions against a random forest regressor (scikit-learn) on a hold-out split, evaluated with mean squared error and R-squared.</li>
+<li>Built SQL feature engineering that aggregates course-level census data to institution-year level, with support tables for lagged entrants and data-quality checks.</li>
+<li>Wrote a Python consolidator (pandas) that turns public education census files into partitioned Parquet datasets with source manifests.</li>
+</ul>
+</article>
+</section>
+<section class="roles">
+<h2>Experience</h2>
+<ol>
+<li class="role">
+<h3>Pearson — Data Analytics &amp; Automation Specialist</h3>
+<p class="period">May 2024 – Present</p>
+<ul class="items">
+<li>Develop Power BI and Tableau dashboards to monitor KPIs and support forecasting across multiple regions.</li>
+<li>Integrate external market data with internal sources to deliver planning insights.</li>
+<li>Promote data quality, governance and metric alignment with cross-functional global teams.</li>
+<li>Design and deploy ETL pipelines (SQL, Alteryx) automating reporting across global datasets.</li>
+<li>Built a BigQuery pipeline health monitor tracking freshness, SLA breaches and data-quality deltas.</li>
+</ul>
+</li>
+<li class="role">
+<h3>Pearson — Business Intelligence Analyst</h3>
+<p class="period">Feb 2023 – May 2024</p>
+<ul class="items">
+<li>Built BI architecture from scratch (MySQL modeling + visualization strategy) for consistency and reuse.</li>
+<li>Defined KPI frameworks embedded into commercial and product workflows.</li>
+<li>Trained the LATAM Sales team (~35 reps) plus Product/Marketing.</li>
+<li>Delivered ~10 dashboards end-to-end.</li>
+</ul>
+</li>
+<li class="role">
+<h3>Pearson — Performance Analyst</h3>
+<p class="period">Jan 2022 – Feb 2023</p>
+<ul class="items">
+<li>Designed executive Tableau dashboards tracking KPIs/OKRs and CAPEX/OPEX/ROI for leadership.</li>
+<li>Ran statistical analyses for forecasting.</li>
+<li>Created ETL processes integrating operational and financial data for performance tracking.</li>
+</ul>
+</li>
+<li class="role">
+<h3>Pearson — Project Administrative Assistant</h3>
+<p class="period">Jun 2021 – Dec 2021</p>
+<ul class="items">
+<li>Supported project coordination, budget control and timelines (spreadsheets, Smartsheet); resource planning and internal reporting.</li>
+</ul>
+</li>
+</ol>
+</section>
+<section class="education">
+<h2>Education</h2>
+<ul>
+<li><span class="text">MBA in Business and Economics — UFSCar, Universidade Federal de São Carlos (Brazil)</span><span class="period">2022–2024</span></li>
+<li><span class="text">B.A. in Economics — UNESPAR, Universidade Estadual do Paraná (Brazil)</span><span class="period">2015–2019</span></li>
+</ul>
+</section>
+<section class="skills">
+<h2>Skills</h2>
+<ul class="tags">
+<li>Power BI</li>
+<li>Tableau</li>
+<li>SQL</li>
+<li>ETL</li>
+<li>Data Pipelines</li>
+<li>Data Modeling</li>
+<li>KPI</li>
+<li>Forecasting</li>
+<li>Data Quality</li>
+<li>Business Intelligence</li>
+<li>Python</li>
+<li>Google Cloud Platform</li>
+<li>Tableau Prep</li>
+<li>AI-assisted development</li>
+</ul>
+</section>
+<section class="languages">
+<h2>Languages</h2>
+<ul class="tags">
+<li>Portuguese: native</li>
+<li>English: fluent</li>
+<li>Spanish: fluent</li>
+</ul>
+</section>
+</main>
+</body>
+</html>
