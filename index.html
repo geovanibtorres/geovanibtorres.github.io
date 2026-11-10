@@ -36,7 +36,7 @@ nav ul,.tags{display:flex;flex-wrap:wrap;gap:.5rem 1rem;margin:1rem 0 0;padding:
 <body>
 <header>
 <h1>Geovani Torres</h1>
-<p class="summary">Data &amp; Analytics professional with an Economics background and MBA, specialized in business intelligence, KPI frameworks and decision-oriented reporting. Transform financial and operational data into clear Power BI, Tableau and HTML dashboards. Use GitHub Copilot to accelerate analysis, drafting and documentation, with Claude Code adoption underway.</p>
+<p class="summary">Data &amp; Analytics professional with an Economics background and MBA, specialized in business intelligence, KPI frameworks and decision-oriented reporting. Transform financial and operational data into clear Power BI, Tableau and HTML dashboards. Use GitHub Copilot to accelerate analysis, drafting and documentation, with Claude Code adoption underway. Open to full-time, contractor and project work, and to international opportunities.</p>
 <nav aria-label="Profiles">
 <ul>
 <li><a href="https://github.com/geovanibtorres">GitHub</a></li>
@@ -51,6 +51,11 @@ nav ul,.tags{display:flex;flex-wrap:wrap;gap:.5rem 1rem;margin:1rem 0 0;padding:
 <h3><a href="https://github.com/geovanibtorres/health_monitor_pipeline">Pipeline Health Monitor</a></h3>
 <p class="period">Jun 2026 – Jul 2026</p>
 <p>Sanitized portfolio version of an execution-centric observability layer for BigQuery pipelines, with an SLA catalog, dependency-based status rollup and de-duplicated alerts.</p>
+<ul class="items">
+<li>Read BigQuery job metadata and checked each pipeline run against a per-table SLA catalog, recording a PASS, WARN, FAIL or NO_DATA status with a severity and a root-cause hint.</li>
+<li>Covered Tableau Prep flows, which do not appear in BigQuery job metadata, with a daily pending row that a separate feeder completes.</li>
+<li>Flagged a warning when a table&#x27;s row count dropped against its previous run, as a lightweight data-quality check.</li>
+</ul>
 </article>
 <article class="card">
 <h3><a href="https://github.com/geovanibtorres/unified-sales-view">Unified Sales View</a></h3>
@@ -66,6 +71,16 @@ nav ul,.tags{display:flex;flex-wrap:wrap;gap:.5rem 1rem;margin:1rem 0 0;padding:
 <li>Benchmarked the panel regressions against a random forest regressor (scikit-learn) on a hold-out split, evaluated with mean squared error and R-squared.</li>
 <li>Built SQL feature engineering that aggregates course-level census data to institution-year level, with support tables for lagged entrants and data-quality checks.</li>
 <li>Wrote a Python consolidator (pandas) that turns public education census files into partitioned Parquet datasets with source manifests.</li>
+</ul>
+</article>
+<article class="card">
+<h3><a href="https://github.com/geovanibtorres/sales-performance-model">Sales Performance &amp; Quota Analytics</a></h3>
+<p class="period">Started Jan 2023</p>
+<p>Anonymized portfolio repository with a layered SQL model that attributes billings to sales reps across ERP sources and combines them with monthly quota plans.</p>
+<ul class="items">
+<li>Built per-source customer masters that resolve the sales rep from a source field, a geography rule or a customer-type rule, unified into one canonical contract.</li>
+<li>Loaded the monthly quota plan, kept in a spreadsheet by sales operations, through a Tableau Prep workflow into a quota table by month, rep and sub-region.</li>
+<li>Combined actuals and quota at one grain in a single view and a performance mart with attainment by month, sub-region and rep.</li>
 </ul>
 </article>
 </section>
@@ -135,6 +150,7 @@ nav ul,.tags{display:flex;flex-wrap:wrap;gap:.5rem 1rem;margin:1rem 0 0;padding:
 <li>Google Cloud Platform</li>
 <li>Tableau Prep</li>
 <li>AI-assisted development</li>
+<li>Git</li>
 </ul>
 </section>
 <section class="languages">
